@@ -38,7 +38,7 @@ ul {
   margin-left: auto;
 }
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-content {
   display: flex;
@@ -85,10 +85,6 @@ ul {
   color: var(--secondary-text-color);
   text-decoration: none;
   display: block;
-  padding: 20px 0px;
-  margin: -20px 0px;
-}
-.site-nav-item {
   padding: 32px 0px;
 }
 
@@ -98,6 +94,8 @@ ul {
 }
 .contacts-list {
   margin-left: auto;
+  list-style: none;
+  display: flex;
 }
 
 .site-nav-link:hover,
@@ -117,8 +115,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
-  padding: 20px 0px;
-  margin: -20px 0px;
+  padding: 32px 0px;
 }
 
 .contacts-link:hover,
@@ -126,10 +123,6 @@ ul {
   color: var(--accent-color);
 }
 
-.contacts-list {
-  list-style: none;
-  display: flex;
-}
 .site-nav-list {
   list-style: none;
   display: flex;
@@ -172,6 +165,7 @@ ul {
   min-width: 200px;
   display: inline-block;
   border-color: transparent;
+  padding: 10px 32px;
 }
 
 /* Особенности */
@@ -199,7 +193,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   width: 270px;
 }
 
@@ -210,9 +204,6 @@ ul {
   padding: 0px 15px;
 }
 
-.properties-list {
-  margin-right: 30px;
-}
 .properties-text {
   font-size: 14px;
   line-height: 1.71;
@@ -239,6 +230,8 @@ ul {
 }
 .section.doing {
   padding-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .works-list {
   list-style: none;
@@ -246,6 +239,11 @@ ul {
 }
 .works-item:not(:last-child) {
   margin-right: 30px;
+}
+.img-doing {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Команда */
@@ -280,7 +278,7 @@ ul {
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 .team-item-container {
   padding-top: 30px;
@@ -361,20 +359,13 @@ ul {
   display: flex;
   justify-content: center;
   margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 .filter-button.current {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  font-family: inherit;
-  cursor: pointer;
 }
 
 .filter-button {
@@ -386,7 +377,6 @@ ul {
   color: var(--secondary-text-color);
   font-family: inherit;
   cursor: pointer;
-  margin-bottom: 50px;
   padding: 6px 22px;
   border: transparent;
   border-radius: 4px;
@@ -412,6 +402,7 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
+  margin-bottom: 4px;
 }
 
 .examples-link {
@@ -430,11 +421,9 @@ ul {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
-  flex-basis: calc(100% / 3 - 30px);
 }
 
 .examples-item {
-  border-bottom: 1px solid #eeeeee;
   margin-left: 30px;
   margin-bottom: 30px;
 }
@@ -446,6 +435,8 @@ ul {
   padding-bottom: 20px;
 }
 
-.examples-text {
-  padding-bottom: 4px;
+.examples-content {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
