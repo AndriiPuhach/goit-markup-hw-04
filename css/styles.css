@@ -12,6 +12,7 @@
   --secondary-bg-color: #2f303a;
   --accent-color: #2196f3;
   --backround-color: #f5f4fa;
+  --social-color: #afb1b8;
 }
 /* Основные параметры body */
 body {
@@ -32,6 +33,9 @@ ul {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -308,6 +312,7 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 .team-item-container {
   padding-top: 30px;
@@ -322,9 +327,84 @@ ul {
   width: 270px;
 }
 
+.social-network .social-link {
+  display: flex;
+  color:var(--social-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.social-network {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  margin-right: 10px;
+}
+
+.social-network .social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-network .social-icon {
+  fill: currentColor;
+}
+
+.social-network .social-link:hover,
+.social-network .social-link:focus {
+color: var(--primary-bg-color);
+background-color: var(--accent-color);
+
+}
+
+
+
+/* .social-network {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: tomato;
+}
+.social-network:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-network-link {
+  color: var(--social-color);
+} */
+/* 
+.social-network-link:hover,
+.social-network-link:focus {
+  color: var(--primary-bg-color);
+}
+
+.social-network:hover,
+.social-network:focus {
+  background-color: turquoise;
+} */
+
+/* .social-netwtork-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px; */
+}
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.social-icon {
+  fill: currentColor;
+}
+
 /* Футер */
 
 .footer {
