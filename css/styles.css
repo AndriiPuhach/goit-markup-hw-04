@@ -329,13 +329,12 @@ ul {
 
 .social-network .social-link {
   display: flex;
-  color:var(--social-color);
+  color: var(--social-color);
   width: 44px;
   height: 44px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  
 }
 
 .social-network {
@@ -357,46 +356,10 @@ ul {
 
 .social-network .social-link:hover,
 .social-network .social-link:focus {
-color: var(--primary-bg-color);
-background-color: var(--accent-color);
-
-}
-
-
-
-/* .social-network {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  background-color: tomato;
-}
-.social-network:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-network-link {
-  color: var(--social-color);
-} */
-/* 
-.social-network-link:hover,
-.social-network-link:focus {
   color: var(--primary-bg-color);
+  background-color: var(--accent-color);
 }
 
-.social-network:hover,
-.social-network:focus {
-  background-color: turquoise;
-} */
-
-/* .social-netwtork-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 16px; */
-}
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -405,12 +368,67 @@ background-color: var(--accent-color);
   fill: currentColor;
 }
 
+/* Клиенты */
+.clients-headline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-link {
+  color: var(--social-color);
+  display: flex;
+  height: 92px;
+  width: 170px;
+  border: 1px solid var(--social-color);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+}
+
+.clients-link:hover {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-item:hover {
+  color: var(--accent-color);
+}
+
 /* Футер */
 
 .footer {
   background-color: var(--secondary-bg-color);
   padding: 60px 0px;
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-content {
+  padding-right: 70px;
+}
+
 /* Лого футер */
 .logo > .logo-studio-footer {
   color: var(--primary-bg-color);
@@ -449,6 +467,39 @@ background-color: var(--accent-color);
 
 .adress-item:not(:last-child) {
   margin-bottom: 9px;
+}
+.footer-socials {
+  display: flex;
+}
+.footer-socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-title {
+  color: var(--primary-bg-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-socials-link {
+  display: flex;
+  color: var(--primary-bg-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: currentColor;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--accent-color);
 }
 /* Мейн портфолио */
 
