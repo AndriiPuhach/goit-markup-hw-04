@@ -11,6 +11,7 @@
   --primary-bg-color: #fff;
   --secondary-bg-color: #2f303a;
   --accent-color: #2196f3;
+  --backround-color: #f5f4fa;
 }
 /* Основные параметры body */
 body {
@@ -95,7 +96,7 @@ ul {
 .contacts-list {
   margin-left: auto;
   list-style: none;
-  display: inline-flex;
+  display: flex;
 }
 
 .site-nav-link:hover,
@@ -116,6 +117,12 @@ ul {
   color: var(--primary-text-color);
   text-decoration: none;
   padding: 32px 0px;
+  align-items: center;
+}
+
+.contacts-item {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .contacts-link:hover,
@@ -135,6 +142,17 @@ ul {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.background {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/backround.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -175,6 +193,17 @@ ul {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.icon-container {
+  display: inline-flex;
+  background-color: var(--backround-color);
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .properties-list {
@@ -248,7 +277,7 @@ ul {
 
 /* Команда */
 .section.team {
-  background-color: #f5f4fa;
+  background-color: var(--backround-color);
 }
 
 .team-headline {
