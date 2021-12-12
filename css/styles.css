@@ -342,7 +342,7 @@ ul {
   justify-content: center;
 }
 
-.social-item {
+.social-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -397,9 +397,10 @@ ul {
   fill: currentColor;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .clients-item {
@@ -410,11 +411,6 @@ ul {
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
-
-.clients-item:hover {
-  color: var(--accent-color);
-}
-
 /* Футер */
 
 .footer {
@@ -426,7 +422,7 @@ ul {
   align-items: baseline;
 }
 .footer-content {
-  padding-right: 70px;
+  margin-right: 70px;
 }
 
 /* Лого футер */
@@ -567,6 +563,13 @@ ul {
 
 .examples-link {
   text-decoration: none;
+  display: block;
+}
+
+.examples-link:hover,
+.examples-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .examples-description {
@@ -586,10 +589,6 @@ ul {
 .examples-item {
   margin-left: 30px;
   margin-bottom: 30px;
-}
-.examples-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .examples-content {
